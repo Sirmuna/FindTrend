@@ -5,7 +5,8 @@ import Navbar from "./common/Navbar";
 import NewTab from "./common/NewTab";
 import StartupGrow from "./common/StartupGrow";
 import Connect from "./common/Connect";
-import BestDeal from "./common/BestDeal";
+
+import PricingCards from "./common/PricingCards";
 function App() {
   return (
     <div>
@@ -14,7 +15,7 @@ function App() {
       <NewTab />
       <StartupGrow />
       <Connect />
-      <BestDeal/>
+      <PricingCards />
     </div>
   );
 }
