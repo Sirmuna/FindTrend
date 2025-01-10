@@ -4,6 +4,7 @@
   --web-green: #a8ff35;
   --text-grey: #8b8b8b;
   --text-light-grey: #adadad;
+  --card-grey: #f5f5f5;
   --font-1: "Caveat", serif;
 }
 h1,
@@ -26,7 +27,6 @@ p {
 
 .navbar-container {
   max-width: 1200px;
-
   margin: 0 auto;
 }
 
@@ -158,9 +158,38 @@ p {
   margin-bottom: 50px;
   justify-content: center;
 }
+#hero-p2 {
+  display: none;
+}
 .hero-col-1 {
   display: flex;
   gap: 20px;
+}
+.btnG {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: transparent;
+  background-color: #a8ff35;
+  transition: ease 0.5s;
+  width: 100%;
+}
+.btnG:hover {
+  background-color: #000;
+  outline: #a8ff35 transparent;
+  color: #fff;
+}
+.btnB {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: transparent;
+  background-color: #000;
+  color: #fff;
+  transition: ease 0.5s;
+}
+.btnB:hover {
+  background-color: #a8ff35;
+  outline: #000 transparent;
+  color: #000;
 }
 .heroBtn {
   grid-column: 2 / 3;
@@ -287,6 +316,197 @@ p {
   font-weight: 400;
   font-size: 18px;
 }
+/* startup grow section */
+.startup-container {
+  background-color: #fff;
+  width: 100%;
+  /* padding: 20px; */
+}
+.startup-content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px;
+  font-size: 64px;
+  font-weight: 700;
+}
+.startup-content span {
+  color: var(--text-light-grey);
+}
+.startup-2 {
+  margin: 150px 0px;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+.sg-container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+  justify-items: center;
+}
+.sg-item {
+  background-color: var(--card-grey);
+  padding: 10px 50px;
+  border-radius: 5px;
+  min-width: 200px;
+  justify-items: center;
+}
+.connect-container {
+  width: 100%;
+  background-color: var(--card-grey);
+}
+.connect-content {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.connect-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+.carousel-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+  scrollbar-width: thin; /* For modern browsers */
+  scrollbar-color: var(--text-light-grey) transparent;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 8px; /* Height of scrollbar */
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.carousel-item {
+  flex: 0 0 auto; /* Prevent items from shrinking */
+  width: 50px;
+  text-align: center;
+  border: transparent;
+  border-radius: 8px;
+  padding: 50px;
+  background-color: #fff;
+  transition: ease 0.5s;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.carousel-item:hover {
+  background-color: var(--web-green);
+}
+.tweets {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  gap: 20px;
+}
+/* Best deal starts */
+.bestdeal-container {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+}
+.bestdeal-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.bd-toggle {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 20px;
+}
+.toggle {
+  background-color: #fff;
+  border-radius: 45px;
+  width: 60px;
+  height: 25px;
+  padding: 5px;
+}
+.toggle-btn {
+  background-color: #a8ff35;
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  /* float: left; */
+}
+.toggle-arrow {
+  font: var(--font-1);
+  font-size: 14px;
+  line-height: 14px;
+  transform: rotateZ(10deg);
+}
+
+.bestdeal-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 50px;
+}
+
+@media (max-width: 1200px) {
+  .hero-content h1 {
+    font-size: 56px;
+    line-height: 40px;
+  }
+  .hero-content p {
+    font-size: 14px;
+  }
+  .socmed-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socmed-handler {
+    margin: 0;
+    align-self: center;
+    width: 300px;
+  }
+  #hero-twit {
+    z-index: 4;
+  }
+  #hero-pint {
+    z-index: 3;
+    margin-top: -50px;
+    margin-right: -150px;
+  }
+  #hero-fb {
+    z-index: 2;
+    margin-top: -50px;
+    margin-right: -150px;
+  }
+  #hero-ball {
+    z-index: 1;
+    margin-top: -50px;
+    margin-right: -150px;
+  }
+  .connect-content h1 {
+    font-size: 34px;
+    font-weight: 900;
+  }
+  .tweets img {
+    width: 95%;
+  }
+  .carousel-item {
+    padding: 40px;
+  }
+}
 @media (max-width: 768px) {
   .nav-links,
   .auth-buttons {
@@ -316,4 +536,96 @@ p {
     width: 100%;
     text-align: center;
   }
+
+  /* hero styling */
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 20px;
+  }
+  #hero-p1 {
+    display: none;
+  }
+  #hero-p2 {
+    display: block;
+  }
+  .hero-col-2 {
+    display: none;
+  }
+  .sec-content h1 {
+    font-size: 32px;
+  }
+  .sec-row {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .sec-row-1 img {
+    transform: rotateZ(-40deg);
+  }
+  .sec-row-1 {
+    transform: rotateZ(10deg);
+    margin-top: -30px;
+    gap: 20px;
+    align-self: flex-start;
+  }
+  .sec-row-2 {
+    padding: 20px;
+  }
+  .sec-row-3 {
+    transform: rotateZ(10deg);
+    gap: 20px;
+    align-self: flex-end;
+    margin-bottom: -30px;
+  }
+  .sec-row-3 img {
+    transform: rotateX(180deg) rotateZ(50deg);
+  }
+  .sec-row-p {
+    font-size: 14px;
+    font-weight: 400;
+    width: 90%;
+  }
+  /* startup responsiveness */
+  .startup-container {
+    padding: none !important;
+    margin: none;
+  }
+  .startup-content {
+    padding: 10px;
+    font-size: 34px;
+    font-weight: 900;
+  }
+  .startup-2 {
+    padding: none;
+    font-size: 34px;
+    font-weight: 900;
+    text-align: center;
+  }
+  .sg-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+  .sg-item {
+    background-color: var(--card-grey);
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+    justify-items: center;
+  }
+  .sg-item img {
+    width: 95%;
+  }
+  .carousel-item {
+    padding: 20px;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
 }

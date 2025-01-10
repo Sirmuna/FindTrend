@@ -8,11 +8,18 @@ const HeroSection = () => {
         <div className="hero-content">
           <h1>Minimize your tabs.</h1>
           <h1>Find the trends!</h1>
-          <p>
+          <p id="hero-p1">
             Don’t let your computer memories consumes all of those browser tabs.
             <br />
             Findtrend let you gathers all of your favorite website into one
             place.
+          </p>
+          <p id="hero-p2">
+            Don’t let your computer memories consumes <br /> all of those
+            browser tabs.
+            <br />
+            Findtrend let you gathers all of your favorite <br />
+            website into one place.
           </p>
           <div className="hero-col">
             <div className="hero-col-1">
@@ -53,37 +60,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <>
-        <div className="sec-sec">
-          <div className="sec-content">
-            <h1>Open new tabs is sh*t </h1>
-            <div className="sec-row">
-              <div className="sec-row-1">
-                <img src="./blackArrow-up.png" className="hero-arrow" />
-                <span>
-                  solution for <br /> discover a trend
-                </span>
-              </div>
-              <div className="sec-row-2">
-                <img src="./group15.png" />
-              </div>
-              <div className="sec-row-3">
-                <span>
-                  You just need <br /> one tab now
-                </span>
-                <img src="./blackArrow-down.png" className="hero-arrow" />
-              </div>
-            </div>
-            <div className="sec-row-p">
-              <p>
-                A solution for your browser tabs and don’t make your device get
-                slower over time. Get ease and faster to discover a trend with
-                just one tab.
-              </p>
-            </div>
-          </div>
-        </div>
-      </>
     </div>
   );
 };
