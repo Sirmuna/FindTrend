@@ -188,7 +188,7 @@ p {
 }
 .btnB:hover {
   background-color: #a8ff35;
-  outline: #000 transparent;
+  outline: #000 1px solid;
   color: #000;
 }
 .heroBtn {
@@ -357,6 +357,7 @@ p {
 .connect-container {
   width: 100%;
   background-color: var(--card-grey);
+  padding: 100px 0;
 }
 .connect-content {
   width: 90%;
