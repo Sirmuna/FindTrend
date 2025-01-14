@@ -13,7 +13,7 @@ const NewTab = () => {
               </span>
             </div>
             <div className="sec-row-2">
-              <img src="./group15.png" className="socmed-handler" />
+              <img src="./Group15.png" className="socmed-handler" />
             </div>
             <div className="sec-row-3">
               <span>
