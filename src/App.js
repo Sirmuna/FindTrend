@@ -8,7 +8,7 @@ import Connect from "./common/Connect";
 
 import PricingCards from "./common/PricingCards";
 import PreFooter from "./common/PreFooter";
-import Footer from "./common/footer";
+import Footer from "./common/Footer";
 import ComingSoonPopup from "./common/ComingSoonPopup";
 function App() {
   return (
