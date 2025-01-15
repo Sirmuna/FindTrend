@@ -1,7 +1,7 @@
 import React from "react";
 const NewTab = () => {
   return (
-    <div>
+    <div id="solution">
       <div className="sec-sec">
         <div className="sec-content">
           <h1>Open new tabs is sh*t </h1>

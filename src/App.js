@@ -8,7 +8,8 @@ import Connect from "./common/Connect";
 
 import PricingCards from "./common/PricingCards";
 import PreFooter from "./common/PreFooter";
-import Footer from "./common/Footer";
+import Footer from "./common/footer";
+import ComingSoonPopup from "./common/ComingSoonPopup";
 function App() {
   return (
     <div>
@@ -19,7 +20,8 @@ function App() {
       <Connect />
       <PricingCards />
       <PreFooter />
-      <Footer/>
+      <Footer />
+      <ComingSoonPopup/>
     </div>
   );
 }

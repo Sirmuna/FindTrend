@@ -11,7 +11,7 @@ const Connect = () => {
     { id: 7, alt: "linkedIn", image: "soc7.png" },
   ];
   return (
-    <div className="connect-container">
+    <div className="connect-container" id="features">
       <div className="connect-content">
         <h1>All platform connect to Findtrend</h1>
         <div className="carousel-container">

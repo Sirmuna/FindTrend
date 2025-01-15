@@ -9,15 +9,16 @@ const Footer = () => {
           <span>Findtrend</span>
         </div>
         <div className="footer-link">
-          <p>Privacy Policy</p>
-          <p>Terms and Conditions</p>
-          <p>Contact Us</p>
-          <p>Careers</p>
+          <a>Privacy Policy</a>
+          <a>Terms and Conditions</a>
+          <a>Contact Us</a>
+          <a>Careers</a>
+          <a href="https://sirmuna.vercel.app" >Sir Muna</a>
         </div>
 
         <style jsx>{`
           .footer-container {
-            background-color: #fff;
+            background-color: #fff; 
             display: flex;
             justify-content: space-between;
             padding: 10px;
@@ -39,9 +40,12 @@ const Footer = () => {
             align-items: center;
             font-size: 18px;
             font-weight: 500;
-            padding-top: 10px;
             cursor:pointer;
           }
+            .footer-link a{
+            text-decoration: none;
+            color: #000;
+            }
           @media screen and (max-width: 768px) {
             .footer-container {
               display:flex;

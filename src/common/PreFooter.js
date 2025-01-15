@@ -2,7 +2,7 @@ import React from "react";
 
 const PreFooter = () => {
   return (
-    <div className="pre-footer">
+    <div className="pre-footer" >
       <div className="pf-content">
         <p>Join us on email for</p>
         <p id="fade-p">more trending topics</p>

@@ -84,7 +84,7 @@ const StartupGrow = () => {
     },
   ];
   return (
-    <div className="startup-container">
+    <div className="startup-container" id="about">
       <div className="startup-content">
         <p>
           Findtrend helps you to increase your productivity and reduce your

@@ -45,7 +45,7 @@ const PricingCards = () => {
   ];
 
   return (
-    <div className="pricing-container">
+    <div className="pricing-container" id="price">
       <div className="pricing-content">
         <div className="pricing-header">
           <h2>Get your best deal</h2>
