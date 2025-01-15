@@ -40,7 +40,6 @@ const Footer = () => {
             align-items: center;
             font-size: 18px;
             font-weight: 500;
-            cursor:pointer;
           }
             .footer-link a{
             text-decoration: none;
