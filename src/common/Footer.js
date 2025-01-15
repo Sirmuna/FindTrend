@@ -56,7 +56,7 @@ const Footer = () => {
               .footer-link{
               display:flex;
               flex-direction: column;
-              gap:0;
+              gap:10px;
               }
           }
         `}</style>
